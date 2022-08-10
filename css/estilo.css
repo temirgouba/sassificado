@@ -1,0 +1,516 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+main {
+  background-color: #dd957b; }
+
+a {
+  text-decoration: none; }
+
+/*HEADER*/
+.header {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid black;
+  position: sticky;
+  top: 0px; }
+
+.enlace_logo {
+  position: absolute; }
+
+.nav_header ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  color: black; }
+
+.nav_header ul li a {
+  border-radius: 3px; }
+
+.nav_header a.active, .nav_header li a:hover {
+  background-color: rgba(0, 0, 0, 0.473);
+  transition: .5s; }
+
+/*MAIN index pagina 1*/
+.main {
+  width: 100%;
+  background-color: #dd957b; }
+
+/*DISCO TRIBUTO*/
+.disco-tributo {
+  display: flex;
+  align-items: center; }
+
+.contenido-tributo {
+  color: black;
+  text-align: center; }
+
+.contenido-tributo p {
+  text-align: justify; }
+
+.enlace_boton {
+  padding: 10px;
+  background-color: #8181f7;
+  color: wheat;
+  border-radius: 5px; }
+
+/*DISCO FECHA RECITAL*/
+.fecha-recital {
+  display: flex;
+  height: 500px;
+  justify-content: space-around;
+  align-items: center; }
+
+.contenido-fecha {
+  color: black;
+  text-align: center; }
+
+.contenido-fecha h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem; }
+
+/*VIDEO DE YOU TUBE*/
+.video-youtube {
+  height: 100%;
+  width: 100%; }
+
+.contenedor-video-youtube {
+  height: 400px;
+  width: 90%;
+  margin: 50px 10px 30px 30px; }
+
+/*INTEGRANTES - PAGINA 2*/
+.main_integrantes {
+  width: 100%;
+  height: 2000px;
+  background-color: #dd957b; }
+
+.main_integrantes h1 {
+  text-align: center; }
+
+.card_integrante {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center; }
+
+.card_integrante a {
+  color: black;
+  text-align: center; }
+
+.card_integrante a h3 {
+  padding: 5px; }
+
+.card_integrante img {
+  height: 80%; }
+
+.enlace_interno_integrantes {
+  position: relative; }
+
+.anchor {
+  position: absolute;
+  top: -115px;
+  left: 0px; }
+
+/*TOM HAMPTON  ANIMACION*/
+#card_tom_hamton_animacion {
+  animation-name: animacion_tom_hamton;
+  animation-duration: 3s;
+  animation-timing-function: ease; }
+
+@keyframes animacion_tom_hamton {
+  0% {
+    transform: translateX(-300px); }
+  75% {
+    transform: translateX(20px); }
+  100% {
+    transform: translate(0px, 0px); } }
+
+/*RICK LONOW ANIMACION*/
+#card_rick_lonow_animacion {
+  animation-name: animacion_rick_lonow;
+  animation-duration: 3s;
+  animation-timing-function: ease; }
+
+@keyframes animacion_rick_lonow {
+  0% {
+    transform: translateY(-500px); }
+  75% {
+    transform: translateY(20px); }
+  100% {
+    transform: translate(0px, 0px); } }
+
+/*JACK SUNDRUD ANIMACION*/
+#card_jack_sundrud_animacion {
+  animation-name: animacion_jack_sundrud;
+  animation-duration: 3s;
+  animation-timing-function: ease; }
+
+@keyframes animacion_jack_sundrud {
+  0% {
+    transform: translateX(300px); }
+  75% {
+    transform: translateX(-20px); }
+  100% {
+    transform: translate(0px, 0px); } }
+
+/*BIOGRAFIA INTEGRANTES*/
+.biografia_integrante h2 {
+  margin: 50px 5px 10px 5px;
+  text-align: center;
+  font-weight: 600; }
+
+.biografia_integrante p {
+  font-size: 0.9rem;
+  text-align: justify; }
+
+/*GALERIA - PAGINA 3*/
+.maingaleria {
+  width: 100%;
+  background-color: #dd957b; }
+
+#grilla_galeria {
+  display: grid; }
+
+.titulo_galeria {
+  text-align: center;
+  padding: 40px 15px; }
+
+/*DISCOGRAFIA*/
+.img_portada {
+  height: 85%; }
+
+.nombre_portada {
+  height: 15%; }
+
+.img_portada_in {
+  width: 100%;
+  height: 100%; }
+
+.titulo_principal_galeria {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  padding: 30px; }
+
+.titulo_nombre_portada {
+  font-size: 1rem;
+  font-weight: 250; }
+
+/*FOOTER*/
+.footer {
+  width: 100%;
+  background-color: black;
+  display: flex; }
+
+.parrafo-footer {
+  color: white; }
+
+.redes-footer p {
+  display: inline-block;
+  color: white; }
+
+@media only screen and (max-width: 768px) {
+  /*HEADER*/
+  .header {
+    height: 80px;
+    z-index: 2; }
+  .enlace_logo {
+    padding: 10px 10px; }
+  .logo {
+    height: 60px; }
+  .nav_header ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #d4e0f5;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s; }
+  .nav_header ul li {
+    display: block;
+    margin: 50px;
+    line-height: 30px; }
+  .nav_header ul li a {
+    font-size: 15px; }
+  .checkbtn {
+    display: block;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    line-height: 80px;
+    float: right;
+    margin-right: 60px; }
+  #check:checked ~ ul {
+    left: 0; }
+  #check {
+    display: none; }
+  /*MAIN*/
+  .main {
+    padding: 10px 10px 10px 10px; }
+  /*DISCO TRIBUTO*/
+  .disco-tributo {
+    height: 850px;
+    flex-direction: column-reverse;
+    justify-content: space-around; }
+  .imagen-tributo {
+    padding: 10px 0px 20px 0px;
+    width: 95%;
+    height: 70%; }
+  .contenido-tributo {
+    font-size: 16px; }
+  .contenido-tributo h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center; }
+  .contenido-tributo p {
+    margin-top: 1.5rem;
+    margin-bottom: 30px;
+    font-size: 1rem; }
+  /*DISCO FECHA RECITAL*/
+  .fecha-recital {
+    flex-direction: column-reverse;
+    margin-top: 70px; }
+  .imagen-recital {
+    padding: 10px 0px 20px 0px;
+    width: 95%;
+    height: 70%; }
+  .contenido-fecha {
+    font-size: 16px; }
+  .contenido-fecha p {
+    margin-bottom: 30px;
+    font-size: 1rem; }
+  /*INTEGRANTES*/
+  .main_integrantes h1 {
+    font-size: 1 rem;
+    padding: 25px 5px; }
+  .card_integrante {
+    z-index: 1; }
+  .card_integrante a h3 {
+    font-size: 0.9rem; }
+  /*BIOGRAFIA INTEGRANTES*/
+  .biografia_integrante h2 {
+    font-size: 1rem; }
+  .biografia_integrante p {
+    margin: 30px 5px;
+    font-size: 0.9rem; }
+  /*GALERIA - PAGINA 3*/
+  #grilla_galeria {
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(11, 300px);
+    row-gap: 2rem;
+    padding: 2rem 5%;
+    justify-content: center; }
+  .foto_galeria img {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px; }
+  /*FOOTER*/
+  .footer {
+    height: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .parrafo-footer {
+    font-size: 10px; }
+  .redes-footer p {
+    font-size: 16px; }
+  .redes-footer a {
+    font-size: 25px; }
+  .redes-footer i {
+    margin: 0px 3px; } }
+
+@media only screen and (min-width: 768px) {
+  /*HEADER*/
+  .header {
+    height: 100px;
+    z-index: 1; }
+  .enlace_logo {
+    padding: 20px 20px; }
+  .logo {
+    height: 60px; }
+  .nav_header ul {
+    float: right;
+    margin-right: 15px; }
+  .nav_header ul li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px; }
+  .nav_header ul li a {
+    font-size: 13px;
+    padding: 7px 3px; }
+  .checkbtn {
+    display: none; }
+  #check {
+    display: none; }
+  /*MAIN*/
+  .main {
+    width: 100%;
+    height: 1600px;
+    background-color: #dd957b; }
+  /*DISCO TRIBUTO*/
+  .disco-tributo {
+    height: 600px;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0em 1em; }
+  .imagen-tributo {
+    width: 40%; }
+  .contenido-tributo {
+    font-size: 1rem;
+    width: 45%; }
+  .contenido-tributo p {
+    padding-top: 1em; }
+  /*DISCO FECHA RECITAL*/
+  .fecha-recital {
+    width: 100%;
+    flex-direction: row-reverse; }
+  .imagen-recital {
+    width: 40%; }
+  .contenido-fecha {
+    font-size: 1rem;
+    width: 45%; }
+  .contenido-fecha p {
+    text-align: justify;
+    padding-top: 1em; }
+  /*INTEGRANTES*/
+  .main_integrantes h1 {
+    font-size: 1.2 rem;
+    padding: 45px 10px; }
+  .contenedor_cards {
+    display: flex;
+    height: 350px;
+    width: 100%;
+    z-index: 1; }
+  .card_integrante a h3 {
+    font-size: 1rem; }
+  /*BIOGRAFIA INTEGRANTES*/
+  .biografia_integrante h2 {
+    font-size: 1.1rem; }
+  .biografia_integrante p {
+    margin: 30px 30px;
+    font-size: 1rem; }
+  /*GALERIA - PAGINA 3*/
+  #grilla_galeria {
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: repeat(5, 300px);
+    grid-template-areas: "foto1 foto1 foto1" "foto2 foto3 foto4" "foto5 foto6 foto7" "foto5 foto8 foto9" "foto10 foto11 foto11";
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 20px 20px 100px 20px;
+    justify-content: center; }
+  .foto_galeria img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    filter: grayscale(100%);
+    transform: scale(1, 1);
+    transition: all 1s; }
+  .foto_galeria img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05, 1.05); }
+  #foto_uno {
+    grid-area: foto1; }
+  #foto_dos {
+    grid-area: foto2; }
+  #foto_tres {
+    grid-area: foto3; }
+  #foto_cuatro {
+    grid-area: foto4; }
+  #foto_cinco {
+    grid-area: foto5; }
+  #foto_seis {
+    grid-area: foto6; }
+  #foto_siete {
+    grid-area: foto7; }
+  #foto_ocho {
+    grid-area: foto8; }
+  #foto_nueve {
+    grid-area: foto9; }
+  #foto_diez {
+    grid-area: foto10; }
+  #foto_once {
+    grid-area: foto11; }
+  /*FOOTER*/
+  .footer {
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse; }
+  .parrafo-footer {
+    font-size: 14px;
+    margin: 10px 10px; }
+  .redes-footer p {
+    font-size: 24px;
+    margin-left: 10px; }
+  .redes-footer a {
+    font-size: 30px; }
+  .redes-footer i {
+    margin: 0px 5px; } }
+
+@media only screen and (min-width: 1200px) {
+  /*HEADER*/
+  .nav_header ul li a {
+    font-size: 20px;
+    padding: 7px 7px; }
+  /*MAIN*/
+  .main {
+    height: 1800px; }
+  /*DISCO TRIBUTO*/
+  .disco-tributo {
+    height: 600px; }
+  .imagen-tributo {
+    width: 45%; }
+  .contenido-tributo {
+    font-size: 1.2rem;
+    width: 42%; }
+  /*DISCO FECHA RECITAL*/
+  .imagen-recital {
+    width: 42%; }
+  .contenido-fecha {
+    font-size: 1.2rem;
+    width: 45%; }
+  /*VIDEO DE YOU TUBE*/
+  .video-youtube {
+    height: 100%;
+    width: 100%; }
+  .contenedor-video-youtube {
+    height: 600px;
+    width: 95%; }
+  /*INTEGRANTES*/
+  .main_integrantes h1 {
+    font-size: 50px;
+    padding: 55px 20px;
+    font-weight: 500; }
+  .contenedor_cards {
+    height: 450px; }
+  .card_integrante {
+    height: 400px; }
+  .card_integrante a h3 {
+    font-size: 30px;
+    padding: 10px; }
+  /*BIOGRAFIA INTEGRANTES*/
+  .biografia_integrante h2 {
+    font-size: 40px; }
+  .biografia_integrante p {
+    margin: 40px 40px;
+    font-size: 30px; }
+  /*FOOTER*/
+  .footer {
+    height: 120px; }
+  .parrafo-footer {
+    font-size: 18px;
+    margin: 10px 10px 10px 20px; }
+  .redes-footer p {
+    font-size: 28px;
+    margin-left: 15px; }
+  .redes-footer a {
+    font-size: 40px; }
+  .redes-footer i {
+    margin: 0px 8px; } }
